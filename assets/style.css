@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  background-color: lemonchiffon;
+  font-family: ubuntu, sans-serif;
+  margin: 0;
+  /*
+  display: flex;
+  flex-direction: column;
+  */
+}
+
+
+
+
+header {
+padding: 5px 0px 0px 0px;
+text-align: left;
+background: #ffff;
+color:#000000;
+margin: auto;
+  }
+
+
+  /* Do I need to set anything contained within the header to display:flex if the header itself is set to display:flex?
+  display: flex;
+  flex-direction: column;
+  /* Do I need to set width and positon with display set as flex?
+  width: 100%;
+  position: relative;
+  color: white;
+  */
+
+.my-name {
+  /*
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:center;
+ 
+  display: flex;
+  justify-content:space-evenly;
+   */
+padding: 0% 0% 0% 0%;
+text-align:left;
+color: black;
+position: auto;
+left: 0px;
+}
+
+.logo {
+  width: 20%;
+  height: 20%;
+  padding: 0px 0px 0px 0px;
+  margin: auto;
+
+}
+
+.web-dev h1 {
+  /* why isn't this text aligning right?*/
+  padding: 0% 0% 0% 0%;
+  text-align:right;
+}
+
+.cityscape {
+  width: 100%;
+  /* what's the difference between height:auto and height:vh?*/
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+nav {
+  display: flex;
+  background-color: none;
+  font-size: 200%;
+}
+
+nav a{
+color:black;
+padding: 0px 50px;
+text-decoration: none;
+text-shadow: 2px 2px rgb(225, 223, 247);
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .example {
+    background: black;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .example {
+    background: green;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {
+    background: yellow;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {
+    background: orange;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {
+    background: black;
+    }
+  }
