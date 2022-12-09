@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 body {
+  
   background-color: lemonchiffon;
-  font-family: ubuntu, sans-serif;
+  font-family: Ubuntu, sans-serif;
   margin: 0;
   /*
   display: flex;
@@ -15,6 +16,7 @@ body {
 
 
 header {
+  /*position: sticky;*/
 background: #ffff;
 color:#000000;
 /*padding: 5px 0px 0px 0px;
@@ -65,30 +67,42 @@ left: 0px;
 
 }
 
-.web-dev h1 {
-  /* why isn't this text aligning right?*/
+.web-dev {
+padding: 0% 0% 0% 0%;
+text-align:left;
+color: black;
+position: auto;
+right: 0px;
+  /*
+  display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+    padding: 5%;
+    */
+/*
   padding: 0% 0% 0% 0%;
   text-align:left;
+  */
 }
-
-.cityscape {
-  width: 100%;
-  /* what's the difference between height:auto and height:vh?*/
-  height: auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 
 
 nav {
+
+  /*display: flex;
+  flex-wrap: wrap;*/
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: none;
-  font-size: 200%;
+  font-size: 150%;
+  
 }
 
+
 nav a{
+
+display: flex;
+flex-wrap: wrap;
 color:black;
 padding: 0px 50px;
 text-decoration: none;
@@ -100,42 +114,133 @@ text-align: center;
 
 
 
+.cityscape {
+  width: 100%;
+  /* what's the difference between height:auto and height:vh?*/
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.about-me-aside {
+  text-align: right;
+  display: block;
+  margin:0%;
+  padding-left: 5%;
+  max-width: 25%;
+  background-color: cornflowerblue;
+}
+
+.more-boilerplate{
+  display: block;
+  text-align: left;
+  
+}
+
+.work-aside{
+  text-align: right;
+  display: block;
+  margin:0%;
+  padding-left: 5%;
+  max-width: 25%;
+  width: auto;
+  background-color: firebrick;
+}
+/*
+aside {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: cornflowerblue;
+  padding: 80px;
+  text-align: center;
+}
+*/
+.contact {
+  text-align: right;
+  display: block;
+  margin:0%;
+  padding-left: 5%;
+  max-width: 25%;
+  background-color:darkorange;
+}
 
 
 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .example{
-    background: black;
+  .my-name {
+    font-size: 100%;
     }
-  }
+    .web-dev h1 {
+      font-size: 100%;
+    }
+}
+  
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
+    .my-name {
+      font-size: 100%;
+      }
+      .web-dev h1 {
+        font-size: 100%;
+      }
+
+      .logo {
+        width: 15%;
+        height: 15%;
+        padding: 0px 0px 0px 0px;
+      
+      }
     .example {
-    background: green;
-    }
-  }
-  
+      background: orange;
+      }
+    } 
+
+
+
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    .example {
-    background: yellow;
+    .my-name {
+    font-size: 150%;
     }
-  } 
-  
+    .web-dev {
+      font-size: 150%;
+    }
+    .logo {
+      width: 15%;
+      height: 15%;
+      padding: 0px 0px 0px 0px;
+    
+    }
+    /*nav {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  */
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    .example {
-    background: orange;
-    }
+    .my-name {
+      font-size: 300%;
+      }
+      .web-dev {
+        font-size: 300%;
+      }
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
+  @media screen and (max-width: 768px) {
     .example {
-    background: black;
-    }
+      background: orange;
+      }
   }
+}
