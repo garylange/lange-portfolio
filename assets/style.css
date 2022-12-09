@@ -124,18 +124,18 @@ text-align: center;
   
 }
 
-main {
+.sidebar {
   display: flex;
   flex-wrap: wrap;
 }
 
 .sidebar >h2{
-  flex: 0,0,30%;
+  flex: 0 0 30%;
 
 }
 
-.sidebar >h2 >div {
-  flex: 0,0,67%;
+.sidebar >div {
+  flex: 0 0 67%;
 }
 
 .about-me-aside {
