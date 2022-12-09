@@ -127,8 +127,17 @@ text-align: center;
 main {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
 }
+
+.sidebar >h2{
+  flex: 0,0,30%;
+
+}
+
+.sidebar >h2 >div {
+  flex: 0,0,67%;
+}
+
 .about-me-aside {
   text-align: right;
   display: block;
