@@ -25,6 +25,17 @@ color:#000000;
     padding:5%; 
   }
 
+.my-name >h1{
+display:flex;
+padding-right:10px;
+font-size: 100%;
+  }
+
+  .web-dev >h1{
+    display:flex;
+    padding-left:10px;
+    font-size: 100%;
+      }
 /*
 .my-name {
 padding: 0% 0% 0% 0%;
@@ -48,8 +59,8 @@ left: 0px;
 */
 
 nav {
-
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background-color: none;
@@ -128,7 +139,7 @@ flex-wrap: wrap;
       }
 
   .work-project-big{
-    width: 500px;
+    width: 620px;
     height: 100px;
     background-color: cornflowerblue;
     color: #fff;
