@@ -57,7 +57,12 @@ left: 0px;
 
 }
 */
+.topnav a:hover{
+color: skyblue;
 
+
+
+}
 nav {
   display: flex;
   flex-wrap: wrap;
