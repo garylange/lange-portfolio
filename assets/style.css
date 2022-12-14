@@ -111,6 +111,18 @@ text-align: center;
 
 }
 
+.sidebar >div a {
+  color:#fff;
+  background-color: transparent;
+  text-decoration: none;
+  }
+
+  .sidebar >div a:hover {
+  color: lemonchiffon;
+  background-color: transparent;
+  text-decoration: underline;
+  }
+
 .work-container-big-image{
  display: flex;
  flex-wrap: wrap;
