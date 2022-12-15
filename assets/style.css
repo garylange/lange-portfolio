@@ -19,7 +19,6 @@ color:#000000;
 }
   .hero{
     display: flex;
-    /* Does the align-items: center; actually do anything here?*/
     align-items: center;
     justify-content: center;
     padding:5%; 
@@ -36,27 +35,7 @@ font-size: 100%;
     padding-left:10px;
     font-size: 100%;
       }
-/*
-.my-name {
-padding: 0% 0% 0% 0%;
-text-align:left;
-color: black;
-position: auto;
-left: 0px;
-}
-*/
-/*
-.logo {
-  width: 20%;
-  height: 20%;
-  padding: 0px 0px 0px 0px;
-}
-*/
-/*
-.web-dev >h1 {
 
-}
-*/
 .topnav a:hover{
 color: skyblue;
 
@@ -87,7 +66,6 @@ text-align: center;
 
 .cityscape {
   width: 100%;
-  /* what's the difference between height:auto and height:vh?*/
   height: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -173,12 +151,15 @@ flex-wrap: wrap;
   margin: 10px;
 }
 
-/*
-.work-holder {
-  flex: 30%;
-  background-color: deepskyblue;
+
+
+footer{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
 }
-*/
+
+
 
 /* Extra small devices (phones, 600px and down) */
 
@@ -259,11 +240,8 @@ flex-wrap: wrap;
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media screen and (max-width: 768px) {
-    .example {
-      background: orange;
-      }
-  }
+ 
+   
 
   
   
